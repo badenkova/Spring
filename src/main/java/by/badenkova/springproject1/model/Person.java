@@ -1,24 +1,25 @@
 package by.badenkova.springproject1.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.Date;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+
 public class Person {
+
     private String firstName;
     private String lastName;
-    public Person() {
-    }
-    public Person(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-    public String getFirstName() {
-        return firstName;
-    }
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-    public String getLastName() {
-        return lastName;
-    }
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+    private String street;
+    private String city;
+    private String zip;
+    private String email;
+    private Date birthday;
+    private String phone;
+
 }
+
