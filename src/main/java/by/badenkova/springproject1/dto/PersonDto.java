@@ -1,4 +1,4 @@
-package by.badenkova.springproject1.model;
+package by.badenkova.springproject1.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,9 +9,8 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
-public class Person {
-
+public class PersonDto {
+    private Long personId;
     private String firstName;
     private String lastName;
     private String street;
@@ -20,6 +19,4 @@ public class Person {
     private String email;
     private Date birthday;
     private String phone;
-
 }
-
